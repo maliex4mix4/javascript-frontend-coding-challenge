@@ -12,10 +12,31 @@
     </div>
 
     <!-- Using a HTTP endpoint -->
-    <!-- <div class="gh-users-group form-group">
+    <div class="gh-users-group form-group">
       <label>Github User:</label>
-      <div id="gh-user"></div>
-    </div> -->
+      <input type="text" name="gh-user" id="gh-user">
+    </div>
+    <div class="datalist" id="gh-user-result">
+    </div>
+
+    <style type="text/css">
+      .datalist{
+        border: 2px solid black;
+        z-index: 9999;
+        padding: 10px;
+        width: 9em;
+        margin-top: 10px; 
+        margin-left: 10%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 10em;
+        display: none;
+      }
+      .datalist div{
+        padding: 8px;
+        border-bottom: 1px solid black;
+      }
+    </style>
 
     <script src="/dist/bundle.js"></script>
   </body>
